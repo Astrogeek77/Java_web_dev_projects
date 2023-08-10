@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HMS | User Login</title>
+<title>HMS | User Register</title>
 <%@include file="components/cdns.jsp"%>
 <style type="text/css">
 .paint-card {
@@ -20,19 +20,23 @@
 			<div class="col-md-4 offset-md-4">
 				<div class="card paint-card">
 					<div class="card-body">
-						<p class="fs-4 text-center">User Login</p>
+						<p class="fs-4 text-center">User Register</p>
 
-						<c:if test="${not empty succMsg }">
-							<p class="text-center text-success fs-3">${succMsg}</p>
-							<c:remove var="succMsg" scope="session" />
+						<c:if test="${not empty respInsertSuccess }">
+							<p class="text-center text-success fs-5">${respInsertSuccess}</p>
+							<c:remove var="respInsertSuccess" scope="session" />
 						</c:if>
 
-						<c:if test="${not empty errorMsg }">
-							<p class="text-center text-danger fs-5">${errorMsg}</p>
-							<c:remove var="errorMsg" scope="session" />
+						<c:if test="${not empty respInsertError }">
+							<p class="text-center text-danger fs-5">${respInsertError}</p>
+							<c:remove var="respInsertError" scope="session" />
 						</c:if>
 
-						<form action="userLogin" method="post">
+						<form action="registerUser" method="post">
+						<div class="mb-3">
+								<label class="form-label">Full Name</label> <input required
+									name="fullname" type="text" class="form-control">
+							</div>
 							<div class="mb-3">
 								<label class="form-label">Email address</label> <input required
 									name="email" type="email" class="form-control">
@@ -46,8 +50,8 @@
 							<button type="submit" class="btn bg-success text-white col-md-12">Login</button>
 						</form>
 
-						<br> Don't have an account? <a href="user_register.jsp"
-							class="text-decoration-none"> Create one</a>
+						<br> Already have an account? <a href="user_login.jsp"
+							class="text-decoration-none"> Login</a>
 
 					</div>
 				</div>
