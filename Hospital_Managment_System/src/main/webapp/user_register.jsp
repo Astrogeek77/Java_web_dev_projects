@@ -47,7 +47,7 @@
 									name="password" type="password" class="form-control">
 							</div>
 
-							<button type="submit" class="btn bg-success text-white col-md-12">Login</button>
+							<button type="submit" class="btn bg-success text-white col-md-12">Register</button>
 						</form>
 
 						<br> Already have an account? <a href="user_login.jsp"

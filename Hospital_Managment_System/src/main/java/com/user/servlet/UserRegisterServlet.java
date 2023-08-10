@@ -38,7 +38,7 @@ public class UserRegisterServlet extends HttpServlet {
 		HttpSession session = req.getSession();
 		
 		if(resp1) {
-			session.setAttribute("respInsertSuccess", "User Data insterted Successfully.");
+			session.setAttribute("respInsertSuccess", "User Registered Successfully.");
 		} else {
 			session.setAttribute("respInsertError", "Something went wrong while inserting data.");
 		}

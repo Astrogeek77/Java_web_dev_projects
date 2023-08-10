@@ -48,6 +48,38 @@ public class UserDAO {
 //		}
 		return result;
 	}
+	
+	public User handleLogin(String email, String password) {
+		User user = null;
+		try {
+			// database design => tablename -> id, Fullname, email, password
+			String databaseTableName = "user_details";
+			String selectquery = "select * from " + databaseTableName + " where email = ? and password = ?";
+
+			// create a prepared statement to execute a query
+			PreparedStatement ps = conn.prepareStatement(selectquery);
+			ps.setString(1, email);
+			ps.setString(2, password);
+			// result response
+			ResultSet resp = ps.executeQuery();
+
+			while (resp.next()) {
+
+				// create an employee object
+				user = new User();
+
+				// fill values in the employee object
+				user.setId(resp.getInt(1));
+				user.setFullname(resp.getString(2));
+				user.setEmail(resp.getString(3));
+				user.setPassword(resp.getString(4));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return user;
+	}
 
 	public boolean updateData(User user) {
 		boolean result = false;
