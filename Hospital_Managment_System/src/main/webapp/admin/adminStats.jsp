@@ -18,10 +18,9 @@
 				<div class="card-body text-center text-success">
 					<i class="fas fa-user-md fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						Doctor <br> 3
+						Doctors <br> 3
 					</p>
-					<a href="#" class="btn btn-sm btn-success disabled"  data-bs-toggle="modal"
-				data-bs-target="#exampleModal">Add Doctor</a>
+					<a href="doctor.jsp" class="btn btn-sm btn-success" >Add Doctor</a>
 				</div>
 			</div>
 		</div>
@@ -33,10 +32,9 @@
 				<div class="card-body text-center text-success">
 					<i class="fas fa-user-circle fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						User <br> 4
+						Users <br> 4
 					</p>
-					<a href="#" class="btn btn-sm btn-success disabled"  data-bs-toggle="modal"
-				data-bs-target="#exampleModal">Add User</a>
+					<a href="../user_register.jsp" class="btn btn-sm btn-success">Add User</a>
 				</div>
 			</div>
 		</div>
@@ -46,10 +44,9 @@
 				<div class="card-body text-center text-success">
 					<i class="far fa-calendar-check fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						Total Appointment <br>5
+						Total Appointments <br>5
 					</p>
-					<a href="#" class="btn btn-sm btn-success disabled"  data-bs-toggle="modal"
-				data-bs-target="#exampleModal">Add Appointments</a>
+					<a href="#" class="btn btn-sm btn-success disabled">Add Appointment</a>
 				</div>
 			</div>
 		</div>
@@ -59,11 +56,11 @@
 				<div class="card-body text-center text-success">
 					<i class="fas fa-notes-medical fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						Specialist <br>6
+						Specialisations <br>6
 					</p>
 					
 					<button class="btn btn-sm btn-success"  data-bs-toggle="modal"
-				data-bs-target="#exampleModal">Add Specialist</button>
+				data-bs-target="#exampleModal">Add Specialisation</button>
 				</div>
 			</div>
 

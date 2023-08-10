@@ -27,12 +27,13 @@ public class LoginDoctorServlet extends HttpServlet {
 
 		DoctorDAO dao = new DoctorDAO(connectDB.getConn());
 		Doctor doctor = dao.login(email, password);
+		System.out.println(doctor);
 
 		if (doctor != null) {
 			session.setAttribute("doctObj", doctor);
 			resp.sendRedirect("doctor/index.jsp");
 		} else {
-			session.setAttribute("errorMsg", "invalid email & password");
+			session.setAttribute("errorMsg", "invalid Credentials");
 			resp.sendRedirect("doctor_login.jsp");
 		}
 

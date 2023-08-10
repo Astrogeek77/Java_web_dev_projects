@@ -20,7 +20,7 @@
 					href="index.jsp">Dashboard</a></li>
 			</ul>
 			<div class="dropdown">
-				<button class="btn btn-sucess border-none dropdown-toggle me-4 text-light" type="button"
+				<button class="btn btn-sucess border-none dropdown-toggle me-4 text-light fs-4" type="button"
 					data-bs-toggle="dropdown" aria-expanded="false">Actions</button>
 				<ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
