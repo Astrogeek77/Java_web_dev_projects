@@ -20,7 +20,7 @@
 					<li class="nav-item"><a class="nav-link text-light"
 						href="user_login.jsp">User Login</a></li>
 					<li class="nav-item me-auto"><a class="nav-link text-light"
-						href="#">Make Appointment</a></li>
+						href="user_appointment.jsp">Make Appointment</a></li>
 				</c:if>
 
 				<c:if test="${not empty userObj }">
