@@ -14,7 +14,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
 				<li class="nav-item"><a class="nav-link text-light" href="index.jsp">Dashbaord</a></li>
-				<li class="nav-item"><a class="nav-link text-light" href="patient.jsp">Patients</a></li>
+				<li class="nav-item"><a class="nav-link text-light" href="patient.jsp">View Patients</a></li>
 			</ul>
 
 			<form class="d-flex">
