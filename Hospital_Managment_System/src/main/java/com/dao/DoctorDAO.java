@@ -193,7 +193,7 @@ public class DoctorDAO {
 	public int countAppointment() {
 		int i = 0;
 		try {
-			String sql = "select * from appointment";
+			String sql = "select * from appointment_details";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
@@ -207,10 +207,10 @@ public class DoctorDAO {
 		return i;
 	}
 
-	public int countAppointmentByDocotrId(int did) {
+	public int countAppointmentByDoctorId(int did) {
 		int i = 0;
 		try {
-			String sql = "select * from appointment where doctor_details_id=?";
+			String sql = "select * from appointment_details where doctor_id=?";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, did);
 			ResultSet rs = ps.executeQuery();
@@ -225,10 +225,10 @@ public class DoctorDAO {
 		return i;
 	}
 
-	public int countUSer() {
+	public int countUser() {
 		int i = 0;
 		try {
-			String sql = "select * from user_dtls";
+			String sql = "select * from user_details";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
@@ -245,7 +245,7 @@ public class DoctorDAO {
 	public int countSpecialisation() {
 		int i = 0;
 		try {
-			String sql = "select * from specialisation";
+			String sql = "select * from specialist_details";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {

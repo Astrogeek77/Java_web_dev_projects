@@ -48,7 +48,7 @@ public class UserDAO {
 //		}
 		return result;
 	}
-	
+
 	public User handleLogin(String email, String password) {
 		User user = null;
 		try {
@@ -207,5 +207,47 @@ public class UserDAO {
 		}
 
 		return userData;
+	}
+
+	public boolean checkOldPassword(int userid, String oldPassword) {
+		boolean result = false;
+
+		try {
+			String sql = "select * from user_details where id=? and password=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, userid);
+			ps.setString(2, oldPassword);
+
+			ResultSet rs = ps.executeQuery();
+			while (rs.next()) {
+				result = true;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return result;
+	}
+
+	public boolean changePassword(int userid, String newPassword) {
+		boolean result = false;
+
+		try {
+			String sql = "update user_details set password=? where id=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, newPassword);
+			ps.setInt(2, userid);
+
+			int i = ps.executeUpdate();
+			if (i == 1) {
+				result = true;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return result;
 	}
 }

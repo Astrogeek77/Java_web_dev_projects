@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HMS | Doctors</title>
+<title>HMS | Admin | Doctors</title>
 <%@include file="../components/cdns.jsp"%>
 <style type="text/css">
 .paint-card {
@@ -21,12 +21,12 @@
 </style>
 </head>
 <body>
-	<%@include file="navbar.jsp"%>
+	<%@include file="./components/navbar.jsp"%>
 	<div class="container-fluid p-3">
 		<div class="row">
 
 
-			<div class="col-md-12">
+			<div class="col-md-12 p-5">
 				<div class="card paint-card">
 					<div class="card-body">
 						<p class="fs-3 text-center">Doctor Details</p>

@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HMS | Admin Dashboard</title>
+<title>HMS | Admin | Dashboard</title>
 <%@include file="../components/cdns.jsp"%>
 <style type="text/css">
 .paint-card {
@@ -16,15 +16,15 @@
 </style>
 </head>
 <body>
-	<%@include file="navbar.jsp"%>
+	<%@include file="./components/navbar.jsp"%>
 
 	<c:if test="${ empty adminObj }">
 		<c:redirect url="../admin_login.jsp"></c:redirect>
 	</c:if>
 
-	<%@include file="adminStats.jsp" %>
+	<%@include file="./components/adminStats.jsp" %>
 	
-	<%@include file="specialistModal.jsp" %>
+	<%@include file="./components/specialistModal.jsp" %>
 	
 	<%@include file="../components/footer.jsp" %>
 </body>

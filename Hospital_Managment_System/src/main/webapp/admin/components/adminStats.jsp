@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page isELIgnored="false"%>
+<%@page import="com.dao.DoctorDAO"%>
+<%@page import="com.db.connectDB"%>
 
 <div class="container p-3 pb-5">
 	<p class="text-center fs-2 mb-4 text-underline">Admin Dashboard</p>
@@ -11,6 +13,9 @@
 		<div class="fs-3 text-center text-success" role="alert">${succMsg}</div>
 		<c:remove var="succMsg" scope="session" />
 	</c:if>
+	<%
+		DoctorDAO dao = new DoctorDAO(connectDB.getConn());
+	%>
 
 	<div class="row gap-5 d-flex justify-content-center">
 		<div class="col-md-4">
@@ -18,7 +23,7 @@
 				<div class="card-body text-center text-success">
 					<i class="fas fa-user-md fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						Doctors <br> 3
+						Doctors <br> <%=dao.countDoctor()%>
 					</p>
 					<a href="doctor.jsp" class="btn btn-sm btn-success" >Add Doctor</a>
 				</div>
@@ -32,9 +37,9 @@
 				<div class="card-body text-center text-success">
 					<i class="fas fa-user-circle fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						Users <br> 4
+						Users <br> <%=dao.countUser()%>
 					</p>
-					<a href="../user_register.jsp" class="btn btn-sm btn-success">Add User</a>
+					<a href="../user_register.jsp" class="btn btn-sm btn-success disabled">Add User</a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +49,7 @@
 				<div class="card-body text-center text-success">
 					<i class="far fa-calendar-check fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						Total Appointments <br>5
+						Total Appointments <br> <%=dao.countAppointment()%>
 					</p>
 					<a href="#" class="btn btn-sm btn-success disabled">Add Appointment</a>
 				</div>
@@ -56,7 +61,7 @@
 				<div class="card-body text-center text-success">
 					<i class="fas fa-notes-medical fa-3x"></i><br>
 					<p class="fs-4 text-center">
-						Specialisations <br>6
+						Specialisations <br><%=dao.countSpecialisation()%>
 					</p>
 					
 					<button class="btn btn-sm btn-success"  data-bs-toggle="modal"

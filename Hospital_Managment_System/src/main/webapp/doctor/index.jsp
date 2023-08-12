@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HMS | Doctor Dashboard</title>
+<title>HMS | Doctor | Dashboard</title>
 <style type="text/css">
 .paint-card {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -51,7 +51,7 @@
 						<i class="far fa-calendar-check fa-3x"></i><br>
 						<p class="fs-4 text-center">
 							Total Appointment <br>
-							3
+							<%= dao.countAppointmentByDoctorId(d.getId()) %>
 						</p>
 					</div>
 				</div>

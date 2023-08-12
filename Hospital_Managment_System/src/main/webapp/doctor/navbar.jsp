@@ -19,7 +19,7 @@
 
 			<form class="d-flex">
 				<div class="dropdown me-4">
-					<button class="btn btn-light dropdown-toggle" type="button"
+					<button class="btn btn-danger dropdown-toggle btn-danger" type="button"
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"
 						aria-expanded="false">
 						<i class="fas fa-user-circle"></i> ${doctObj.fullName }

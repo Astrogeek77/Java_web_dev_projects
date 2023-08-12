@@ -15,16 +15,16 @@
 				<li class="nav-item mx-2"><a class="nav-link text-light"
 					href="view_doctor.jsp">View Doctors</a></li>
 				<li class="nav-item mx-2"><a class="nav-link text-light"
-					href="patient.jsp">Patients</a></li>
+					href="view_patient.jsp">View Patients</a></li>
 				<li class="nav-item mx-2"><a class="nav-link text-light"
 					href="index.jsp">Dashboard</a></li>
 			</ul>
 			<div class="dropdown">
-				<button class="btn btn-sucess border-none dropdown-toggle me-4 text-light fs-4" type="button"
-					data-bs-toggle="dropdown" aria-expanded="false">Actions</button>
+				<button class="btn btn-danger border-none dropdown-toggle me-4 text-light fs-5" type="button"
+					data-bs-toggle="dropdown" aria-expanded="false">Admin</button>
 				<ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
-					<li><a class="dropdown-item" href="../index.jsp">Home</a></li>
+					<li><a class="dropdown-item" href="../index.jsp">Home Page</a></li>
 				</ul>
 			</div>
 			<span class="navbar-text fs-5 fs-lg-4 text-light"> <i

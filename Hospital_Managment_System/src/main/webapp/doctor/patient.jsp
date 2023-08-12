@@ -11,7 +11,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HMS | View Patients</title>
+<title>HMS | Doctor | View Patients</title>
 <%@include file="../components/cdns.jsp"%>
 <style type="text/css">
 .paint-card {
