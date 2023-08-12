@@ -16,9 +16,9 @@
 </head>
 <body>
 	<%@include file="components/navbar.jsp"%>
-	<div class="container p-5">
+	<div class="container p-5 d-flex align-items-stretch justify-content-evenly">
 		<div class="row">
-			<div class="col-md-4 offset-md-4">
+			<div class="col-lg-4">
 				<div class="card paint-card">
 					<div class="card-body">
 						<p class="fs-4 text-center">Doctor Login</p>
@@ -42,11 +42,14 @@
 								<label class="form-label">Password</label> <input required
 									name="password" type="password" class="form-control">
 							</div>
-							<button type="submit" class="btn bg-success text-white col-md-12">Login</button>
+							<button type="submit" class="btn bg-success text-white col-12">Login</button>
 						</form>
 
 					</div>
 				</div>
+			</div>
+			<div class="col-lg-4 d-none d-lg-block">
+				<img style="max-width: 700px; max-height: 300px;" alt="" src="images/carousel-3.webp">
 			</div>
 		</div>
 	</div>

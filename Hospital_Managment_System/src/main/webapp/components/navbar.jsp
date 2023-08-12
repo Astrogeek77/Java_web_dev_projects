@@ -11,7 +11,8 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse " id="navbarText">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 text-light d-flex justify-content-evenly">
+			<ul
+				class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 text-light d-flex justify-content-evenly">
 				<c:if test="${empty userObj }">
 					<li class="nav-item"><a class="nav-link text-light"
 						href="doctor_login.jsp">Doctor Login</a></li>
@@ -30,11 +31,11 @@
 
 					<li class="nav-item"><a
 						class="nav-link text-light mx-2 me-auto" aria-current="page"
-						href="view_appointment.jsp">View Appointment</a></li>
+						href="view_appointment.jsp">View Appointments</a></li>
 
 					<div class="dropdown ms-5">
-						<button class="btn btn-success dropdown-toggle"
-							type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						<button class="btn btn-success dropdown-toggle" type="button"
+							id="dropdownMenuButton1" data-bs-toggle="dropdown"
 							aria-expanded="false">
 							<i class="fa-solid fa-circle-user"></i> ${userObj.fullname }
 						</button>
@@ -47,9 +48,9 @@
 					</div>
 				</c:if>
 			</ul>
+			<span class="navbar-text fs-5 fs-lg-4 text-light"> <i
+				class="fa-solid fa-stethoscope"></i> Hospital Management System CMS
+			</span>
 		</div>
-		<span class="navbar-text fs-5 fs-lg-4 text-light"> <i
-			class="fa-solid fa-stethoscope"></i> Hospital Management System CMS
-		</span>
 	</div>
 </nav>

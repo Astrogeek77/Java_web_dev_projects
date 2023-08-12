@@ -13,7 +13,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>HMS | View Appointments</title>
 <%@include file="components/cdns.jsp"%>
 <style type="text/css">
 .paint-card {
@@ -93,10 +93,6 @@
 
 					</div>
 				</div>
-			</div>
-
-			<div class="col-md-3 p-3">
-				<img alt="" src="img/doct.jpg">
 			</div>
 		</div>
 	</div>

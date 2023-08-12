@@ -17,7 +17,7 @@ response.setDateHeader("Expires", 0);
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>User Appointment</title>
+<title>HMS | Add a Appointment</title>
 <%@include file="../components/cdns.jsp"%>
 <style type="text/css">
 .paint-card {
@@ -44,7 +44,7 @@ response.setDateHeader("Expires", 0);
 	<div class="container p-3">
 		<div class="row">
 			<div class="col-md-6 p-5">
-				<img alt="" src="../images/doct-2.png">
+				<img alt="" src="images/doct-2.png">
 			</div>
 
 			<div class="col-md-6">
